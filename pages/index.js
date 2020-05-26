@@ -17,7 +17,7 @@ export default function Home() {
         />
       </div>
       <header className="header">
-        <img src="/logo-4.svg" className="logo" />
+        <img src="/logo.png" className="logo" />
         <div
           style={{
             display: 'flex',
@@ -56,7 +56,9 @@ export default function Home() {
           <p>
             Help make getting weed hassle free. Get a professional website to help with online orders, product updates and more.
           </p>
-          <button className="donateBtn">LEARN MORE</button>
+          <button className="getStartedBtn">GET STARTED</button>
+          <h4>Prices start as low as $100</h4>
+          <img src="/happy.png" className="happy" />
         </div>
         <div className="section">
           <h1 className='proHeader'>Work With Experts</h1>
@@ -79,21 +81,28 @@ export default function Home() {
       </main>
 
       <style jsx>{`
-        .applyBtn,
-        .donateBtn {
+        header{
+          max-height: 60px;
+        }
+
+        .getStartedBtn {
+          background-color: #7AD369;
+          height: 50px;
+          width: 150px;
            padding: 0.35em 1.2em;
-           margin: 1em;
-           text-decoration: none;
+          text-decoration: none;
           border-radius: 2em;
            text-align: center;
            transition: all 0.2s;
           color: #fff;
+          font-size: 14px
         }
 
-        .donateBtn {
-           background-color: red;
-          height: 50px;
-          width: 150px
+        button {
+          margin: 0.5em;
+          padding: 0;
+          border: none;
+          background-color: none;
         }
 
         .applyBtn {
@@ -106,52 +115,63 @@ export default function Home() {
           color: #fff;
         }
 
-        .donateBtn:hover {
+        .getStartedBtn:hover {
           border-color: red;
           background-color: black;
           color: #fff;
         }
 
         .section {
-          margin: 3em 5em;
+          margin: 0em 5em 0em 5em;
           display: flex;
           flex-direction: column;
           align-items: center;
         }
 
-
         h1 {
           font-size: 28px;
           text-align: center;
           font-weight: normal;
-          margin: 0.5em;
+          margin: 1.5em 1em 0.5em 1em;
           line-height: 1.4;
+        }
+
+        h4{
+          margin: .8em 0em;
+          padding: 0
         }
 
         p {
           text-align: center;
-          margin: 0.5em 1.2em;
+          margin: 0.5em 2em 1em 2em;
           line-height: 1.6;
+          font-size: 18px
         }
 
+        .logo {
+          height: 12em;
+          width: 12em;
+        }
+
+        .happy{
+          height: 11em;
+          width: 11em;
+        }
+
+        .burger {
+          display: inline;
+          height: 30px;
+          width: 30px;
+          max-height: 100px;
+          max-width: 100px;
+          padding: 0;
+          margin: 0;
+        }
+        
         .mobileNav {
           float: right;
           position: relative;
           display: inline-block;
-        }
-
-        button {
-          margin: 0.5em;
-          padding: 0;
-          border: none;
-          background-color: none;
-        }
-
-        .logo {
-          height: 6em;
-          width: 6em;
-          max-height: 100px;
-          max-width: 100px;
         }
 
         #homeNav {
@@ -166,16 +186,6 @@ export default function Home() {
 
         .desktopNav{
           display: none !important
-        }
-
-        .burger {
-          display: inline;
-          height: 30px;
-          width: 30px;
-          max-height: 100px;
-          max-width: 100px;
-          padding: 0;
-          margin: 0;
         }
 
         @media only screen and (min-width: 760px) {
