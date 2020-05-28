@@ -29,9 +29,9 @@ export default function Home() {
           {/* desktop */}
           <div className="desktopNav">
             <nav id="desktopHomeNav">
-                <ul>ABOUT US</ul>
-                <ul>LEARN MORE</ul>
-                <ul>DONATE NOW!</ul>
+              <ul>ABOUT US</ul>
+              <ul>LEARN MORE</ul>
+              <ul>DONATE NOW!</ul>
             </nav>
           </div>
           {/* mobile */}
@@ -54,59 +54,74 @@ export default function Home() {
         <div className="section">
           <h1>Weed should help your headache, not cause it</h1>
           <p>
-            Help make getting weed hassle free. Get a professional website to help with online orders, product updates and more.
+            Help make getting weed hassle free. Get a professional website to
+            help with online orders, product updates and more.
           </p>
           <button className="getStartedBtn">GET STARTED</button>
-          <h4>Prices start as low as $100</h4>
-          <img src="/happy.png" className='happy' />
+          <h4>Discounts Up To 30% When You Mention Covid</h4>
+          <img src="/happy.png" className="happy" />
         </div>
         <div className="section">
-          <h1 className='why'>Why Work With Us?</h1>
-          <img src='/money.png' className='money' id='sectionPic'/>
-          <h1 className='sectionH'>Increase Your Sales</h1>
+          <h1 className="why">Why Work With Us?</h1>
+          <img src="/money.png" className="money" id="sectionPic" />
+          <h1 className="sectionH">Increase Your Sales</h1>
           <p>
-            Companies who chose Marys Site have seen increases in sales, up to 20%!
+            Companies who chose Marys Site have seen increases in sales, up to
+            20%!
           </p>
           <h5>*Online sales have gone up 50% nationwide since Covid.</h5>
         </div>
         <div className="section">
-          <img src='/expert.png' className='expert' id='sectionPic'/>
-          <h1 className='sectionH'>Work With Experts</h1>
+          <img src="/expert.png" className="expert" id="sectionPic" />
+          <h1 className="sectionH">Work With Experts</h1>
           <p>
-            Work with a team of designers and enginners who are here to collaborate with you in the proccess of bringing your vision to life.
+            Work with a team of designers and enginners who are here to
+            collaborate with you in the proccess of bringing your vision to
+            life.
           </p>
         </div>
         <div className="section">
-          <img src='/chart.png' className='expert' id='sectionPic'/>
-          <h1 className='sectionH'>Analyze Your Data</h1>
+          <img src="/chart.png" className="expert" id="sectionPic" />
+          <h1 className="sectionH">Analyze Your Data</h1>
           <p>
-            When you chose Marys site, you will be able to see what products are doing best and worst. Making it easy to decide what to restock with.
+            When you chose Marys site, you will be able to see what products are
+            doing best and worst. Making it easy to decide what to restock with.
           </p>
         </div>
-        <div className="section">
-          <h1>Choose A Plan</h1>
-          <p>
-            After having contacted us, we will shedule a meeting to go
-          </p>
+        <div className="plans">
+          <div className="plan">
+            <div className='planW'>
+              <h2 className="planH">Redesigned Website</h2>
+              <h3 className='planP'>$1500</h3>
+              <button className="planBtn">CONTINUE</button>
+            </div>
+            <div className='planM'>
+              <h4 className='planMH'>Hello</h4>
+              <p className='planD'>After having contacted us, we will shedule a meeting to go</p>
+            </div>
+          </div>
+          <div className="plan">
+            <div className='planW'>
+              <h2 className="planH">Choose A Plan</h2>
+              <h3 className='planP'>$1000</h3>
+              <button className="planBtn">CONTINUE</button>
+            </div>
+            <p className='planD'>After having contacted us, we will shedule a meeting to go</p>
+          </div>
+          <div className="plan">
+            <div className='planW'>
+              <h2 className="planH">Choose A Plan</h2>
+              <h3 className='planP'>$1000</h3>
+              <button className="planBtn">CONTINUE</button>
+            </div>
+            <p className='planD'>After having contacted us, we will shedule a meeting to go</p>
+          </div>
         </div>
       </main>
 
       <style jsx>{`
-        header{
+        header {
           max-height: 60px;
-        }
-
-        .getStartedBtn {
-          background-color: #7AD369;
-          height: 50px;
-          width: 150px;
-           padding: 0.35em 1.2em;
-          text-decoration: none;
-          border-radius: 2em;
-           text-align: center;
-           transition: all 0.2s;
-          color: #fff;
-          font-size: 14px
         }
 
         button {
@@ -116,14 +131,54 @@ export default function Home() {
           background-color: none;
         }
 
+        .getStartedBtn {
+          background-color: #7ad369;
+          height: 50px;
+          width: 150px;
+           padding: 0.35em 1.2em;
+          text-decoration: none;
+          border-radius: 2em;
+           text-align: center;
+           transition: all 0.2s;
+          color: #fff;
+          font-size: 14px;
+        }
+
         .getStartedBtn:hover {
-          border-color: #7AD369;
+          border-color: #7ad369;
+          background-color: black;
+          color: #fff;
+        }
+
+        .planBtn {
+          background-color: #7ad369;
+          height: 40px;
+          width: 90px;
+          padding: 0.35em 1.2em;
+          margin: 0.5em 0 1em 0;
+          text-decoration: none;
+          border-radius: 2em;
+          text-align: center;
+          transition: all 0.2s;
+          color: #fff;
+          font-size: 12px;
+        }
+
+        .planBtn:hover {
+          border-color: #7ad369;
           background-color: black;
           color: #fff;
         }
 
         .section {
-          margin: 0em 5em 0em 5em;
+          margin: 0em 5em;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .plans{
+          margin: 1em 3em;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -137,29 +192,56 @@ export default function Home() {
           line-height: 1.4;
         }
 
-        h4{
-          margin: .8em 0em;
+        h4 {
+          margin: 0.8em 0em;
+          padding: 0;
+          font-size: 10px;
+        }
+
+        h5 {
+          font-size: 10px;
+        }
+
+        .why {
+          font-size: 28px;
+          margin-top: 2em;
+        }
+
+        .sectionH {
+          margin: 0.5em 1em 0.5em 1em;
+        }
+
+        .planH{
+          text-align: left;
+          margin: 1em 0 0.3em 0;
           padding: 0
         }
 
-        h5{
-          font-size: 10px
+        .planP{
+          margin: 0;
+          padding: 0;
+          font-size: 34px
         }
 
-        .why{
-          font-size: 28px;
-          margin-top: 2em
+        .planD{
+          text-align: left;
+          margin: .5em 0
         }
 
-        .sectionH{
-          margin: .5em 1em 0.5em 1em;
+        .planW{
+          border-bottom: 2px solid black
+        }
+
+        .planMH{
+          font-size: 16px;
+          font-weight: 900
         }
 
         p {
           text-align: center;
           margin: 0.5em 2em 1em 2em;
           line-height: 1.4;
-          font-size: 18px
+          font-size: 18px;
         }
 
         .logo {
@@ -167,21 +249,21 @@ export default function Home() {
           width: 12em;
         }
 
-        #sectionPic{
-          margin-top: 1em
+        #sectionPic {
+          margin-top: 1em;
         }
 
-        .happy{
+        .happy {
           height: 11em;
           width: 11em;
         }
 
-        .expert{
+        .expert {
           height: 9em;
-          width: 11em 
+          width: 11em;
         }
 
-        .money{
+        .money {
           height: 5em;
           width: 7em;
         }
@@ -195,7 +277,7 @@ export default function Home() {
           padding: 0;
           margin: 0;
         }
-        
+
         .mobileNav {
           float: right;
           position: relative;
@@ -212,8 +294,8 @@ export default function Home() {
           z-index: 1;
         }
 
-        .desktopNav{
-          display: none !important
+        .desktopNav {
+          display: none !important;
         }
 
         @media only screen and (min-width: 760px) {
@@ -233,8 +315,7 @@ export default function Home() {
             box-shadow: none !important;
             z-index: 0 !important;
             background: none !important;
-            position: relative !important
-
+            position: relative !important;
           }
         }
 
