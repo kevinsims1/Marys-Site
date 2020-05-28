@@ -58,18 +58,29 @@ export default function Home() {
           </p>
           <button className="getStartedBtn">GET STARTED</button>
           <h4>Prices start as low as $100</h4>
-          <img src="/happy.png" className="happy" />
+          <img src="/happy.png" className='happy' />
         </div>
         <div className="section">
-          <h1 className='proHeader'>Work With Experts</h1>
+          <h1 className='why'>Why Work With Us?</h1>
+          <img src='/money.png' className='money' id='sectionPic'/>
+          <h1 className='sectionH'>Increase Your Sales</h1>
+          <p>
+            Companies who chose Marys Site have seen increases in sales, up to 20%!
+          </p>
+          <h5>*Online sales have gone up 50% nationwide since Covid.</h5>
+        </div>
+        <div className="section">
+          <img src='/expert.png' className='expert' id='sectionPic'/>
+          <h1 className='sectionH'>Work With Experts</h1>
           <p>
             Work with a team of designers and enginners who are here to collaborate with you in the proccess of bringing your vision to life.
           </p>
         </div>
         <div className="section">
-          <h1>You Have Options</h1>
+          <img src='/chart.png' className='expert' id='sectionPic'/>
+          <h1 className='sectionH'>Analyze Your Data</h1>
           <p>
-            Ditch the third parties and get professinal. When you work with us you get to display your brand not someone elses. We customize your site to your liking.
+            When you chose Marys site, you will be able to see what products are doing best and worst. Making it easy to decide what to restock with.
           </p>
         </div>
         <div className="section">
@@ -105,18 +116,8 @@ export default function Home() {
           background-color: none;
         }
 
-        .applyBtn {
-           background-color: black;
-        }
-
-        .applyBtn:hover {
-          border-color: black;
-          background-color: red;
-          color: #fff;
-        }
-
         .getStartedBtn:hover {
-          border-color: red;
+          border-color: #7AD369;
           background-color: black;
           color: #fff;
         }
@@ -141,10 +142,23 @@ export default function Home() {
           padding: 0
         }
 
+        h5{
+          font-size: 10px
+        }
+
+        .why{
+          font-size: 28px;
+          margin-top: 2em
+        }
+
+        .sectionH{
+          margin: .5em 1em 0.5em 1em;
+        }
+
         p {
           text-align: center;
           margin: 0.5em 2em 1em 2em;
-          line-height: 1.6;
+          line-height: 1.4;
           font-size: 18px
         }
 
@@ -153,9 +167,23 @@ export default function Home() {
           width: 12em;
         }
 
+        #sectionPic{
+          margin-top: 1em
+        }
+
         .happy{
           height: 11em;
           width: 11em;
+        }
+
+        .expert{
+          height: 9em;
+          width: 11em 
+        }
+
+        .money{
+          height: 5em;
+          width: 7em;
         }
 
         .burger {
