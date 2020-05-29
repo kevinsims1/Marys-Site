@@ -96,25 +96,55 @@ export default function Home() {
               <button className="planBtn">CONTINUE</button>
             </div>
             <div className='planM'>
-              <h4 className='planMH'>Hello</h4>
-              <p className='planD'>After having contacted us, we will shedule a meeting to go</p>
+              <h4 className='planMH'>Design Check</h4>
+              <p className='planD'>Our designers will review your current site and take notes of issues found.</p>
+            </div>
+            <div className='planM'>
+              <h4 className='planMH'>Collaborate</h4>
+              <p className='planD'>We'll present these problems, as well as ideas on possible solutions. From there we'll collaborate to ensure we are capturing your culture, in our design.</p>
+            </div>
+            <div className='planM'>
+              <h4 className='planMH'>Implement</h4>
+              <p className='planD'>After we reach A final design our engineers will take over and implent the design.</p>
             </div>
           </div>
           <div className="plan">
             <div className='planW'>
-              <h2 className="planH">Choose A Plan</h2>
-              <h3 className='planP'>$1000</h3>
+              <h2 className="planH">Order Automation</h2>
+              <h3 className='planP'>$3000</h3>
               <button className="planBtn">CONTINUE</button>
             </div>
-            <p className='planD'>After having contacted us, we will shedule a meeting to go</p>
+            <div className='planM'>
+              <h4 className='planMH'>Get Online Orders In Real Time</h4>
+              <p className='planD'>Our system will ensure you get your customers order the moment its placed.</p>
+            </div>
+            <div className='planM'>
+              <h4 className='planMH'>Know Your Customers</h4>
+              <p className='planD'>With our order automation you will be able to keep track of customer data, such as what products are selling fast or h.</p>
+            </div>
+            <div className='planM'>
+              <h4 className='planMH'>Stay Updated</h4>
+              <p className='planD'>Along side the implementation, our team will make sure your software stays up to date with the latest technologies.</p>
+            </div>
           </div>
           <div className="plan">
             <div className='planW'>
-              <h2 className="planH">Choose A Plan</h2>
-              <h3 className='planP'>$1000</h3>
+              <h2 className="planH">Professional Web App</h2>
+              <h3 className='planP'>$6000</h3>
               <button className="planBtn">CONTINUE</button>
             </div>
-            <p className='planD'>After having contacted us, we will shedule a meeting to go</p>
+            <div className='planM'>
+              <h4 className='planMH'>Automated Order System</h4>
+              <p className='planD'>Get everything included in the "Order Automation" package.</p>
+            </div>
+            <div className='planM'>
+              <h4 className='planMH'>Tailored Design</h4>
+              <p className='planD'>Get everything included in the "Website Redesign" package.</p>
+            </div>
+            <div className='planM'>
+              <h4 className='planMH'>Easy Upload</h4>
+              <p className='planD'>We have created a system that makes adding, removing, updating current inventory as easy as a click of a button.</p>
+            </div>
           </div>
         </div>
       </main>
@@ -211,10 +241,14 @@ export default function Home() {
           margin: 0.5em 1em 0.5em 1em;
         }
 
+        .plan{
+          margin: 0 0 2em 0;
+        }
+
         .planH{
           text-align: left;
           margin: 1em 0 0.3em 0;
-          padding: 0
+          padding: 0;
         }
 
         .planP{
@@ -225,16 +259,19 @@ export default function Home() {
 
         .planD{
           text-align: left;
-          margin: .5em 0
+          margin: .2em 0
         }
 
         .planW{
-          border-bottom: 2px solid black
+          border-bottom: 2px solid #5D675B;
+          color: black
         }
 
         .planMH{
-          font-size: 16px;
-          font-weight: 900
+          font-size: 24px;
+          font-weight: bold !important;
+          margin: 1.5em 0 0em 0;
+          color: black
         }
 
         p {
@@ -343,6 +380,7 @@ export default function Home() {
           padding: 0;
           margin: 0;
           font-family: 'Roboto', sans-serif;
+          color: #5D675B
         }
 
         * {
