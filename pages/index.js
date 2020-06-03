@@ -195,7 +195,7 @@ export default function Home() {
         }
 
         .container{
-          margin: 0 1em
+          margin: 0 .5em
         }
 
         .getStartedBtn {
@@ -245,7 +245,7 @@ export default function Home() {
         }
 
         .headSec{
-          margin: 0em 5em;
+          margin: 0em 1em;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -255,6 +255,11 @@ export default function Home() {
           display: flex;
           flex-direction: column;
           align-items: center;
+        }
+
+        .mainHeader {
+          margin: 1em 2em 0.5em 2em;
+          font-size: 25px;
         }
 
         .plans {
@@ -456,7 +461,7 @@ export default function Home() {
 
           .headSection {
             margin: 0 0;
-            max-width: 50%;
+            max-width: 70%;
           }
 
           .happyTop {
@@ -464,7 +469,7 @@ export default function Home() {
           }
 
           .mainHeader {
-            margin: 1em 0 0.5em 0;
+            margin: 1em 0em 0.5em 0em;
             font-size: 35px;
           }
         }
