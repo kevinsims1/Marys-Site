@@ -298,6 +298,7 @@ export default function Home() {
 
         .plan {
           margin: 0 0 2em 0;
+          width: 100%
         }
 
         .planH {
@@ -454,8 +455,8 @@ export default function Home() {
           }
 
           #sectionPic{
-            width: 8em;
-            height: 8em
+            width: 6em;
+            height: 6em
 
           }
 
