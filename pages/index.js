@@ -30,7 +30,7 @@ export default function Home() {
           <div className="desktopNav">
             <nav id="desktopHomeNav">
             <ul>
-              <a href="tel:5554280940">Call us at 555-428-0940</a>
+              <a href="tel:5303093616">Call us at 530-309-3616</a>
             </ul>
             </nav>
           </div>
@@ -42,7 +42,7 @@ export default function Home() {
             {toggle && (
               <nav id="homeNav">
                 <ul>
-                 <a href="tel:5554280940">Call us at 555-428-0940</a>
+                 <a href="tel:5303093616">Call us at 530-309-3616</a>
                 </ul>
               </nav>
             )}
@@ -189,7 +189,7 @@ export default function Home() {
           flex-direction: row;
           justify-content: space-around
         }
-        
+
         a{
           text-decoration: none;
           color: #1a1a1e
