@@ -29,9 +29,9 @@ export default function Home() {
           {/* desktop */}
           <div className="desktopNav">
             <nav id="desktopHomeNav">
-              <ul>ABOUT US</ul>
-              <ul>LEARN MORE</ul>
-              <ul>DONATE NOW!</ul>
+            <ul>
+              <a href="tel:5554280940">Call us at 555-428-0940</a>
+            </ul>
             </nav>
           </div>
           {/* mobile */}
@@ -41,9 +41,9 @@ export default function Home() {
             </button>
             {toggle && (
               <nav id="homeNav">
-                <ul>ABOUT US</ul>
-                <ul>LEARN MORE</ul>
-                <ul>DONATE NOW!</ul>
+                <ul>
+                 <a href="tel:5554280940">Call us at 555-428-0940</a>
+                </ul>
               </nav>
             )}
           </div>
@@ -80,9 +80,8 @@ export default function Home() {
             <img src="/expert.png" className="expert" id="sectionPic" />
             <h1 className="sectionH">Work With Experts</h1>
             <p className='sectionD'>
-              Work with a team of designers and enginners who are here to
-              collaborate with you in the proccess of bringing your vision to
-              life.
+              Collaborate with designers and enginners who are here to
+              help materialize your vision.
             </p>
           </div>
           <div className="section">
@@ -185,6 +184,19 @@ export default function Home() {
       <style jsx>{`
         header {
           max-height: 60px;
+          left: 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around
+        }
+        
+        a{
+          text-decoration: none;
+          color: #1a1a1e
+        }
+
+        a:hover{
+          color: blue
         }
 
         button {
@@ -338,8 +350,8 @@ export default function Home() {
         }
 
         .logo {
-          height: 12em;
-          width: 12em;
+          height: 10em;
+          width: 10em;
         }
 
         #sectionPic {
@@ -403,8 +415,12 @@ export default function Home() {
             margin: 0
           }
 
+          header{
+            max-width: 900px;
+          }
+
           .headSec{
-            margin: .5em 4em 8em 4em;
+            margin: .5em 2em 8em 2em;
             display: flex;
             flex-direction: row;
             justify-items: center !important
@@ -443,7 +459,7 @@ export default function Home() {
           }
 
           .mainSection{
-            margin: .5em 3em 2.5em 3em;
+            margin: .5em 4em 2.5em 4em;
             display: flex;
             flex-direction: row;
             justify-content: space-evenly !important
@@ -499,7 +515,7 @@ export default function Home() {
           padding: 0;
           margin: 0;
           font-family: 'Roboto', sans-serif;
-          color: #5d675b;
+          color: #1a1a1e;
         }
 
         * {
